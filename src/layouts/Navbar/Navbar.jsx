@@ -44,7 +44,7 @@ const Navbar = () => {
           </div>
         </Link>
       </div>
-      <div className="navbar-end w-full selection:file:before:hidden lg:flex">
+      <div className="navbar-end w-full selection:file:before: hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-bold">
           <li className="hover:bg-white transition duration-300 ease-in-out rounded-lg">
             <a>HOME</a>
