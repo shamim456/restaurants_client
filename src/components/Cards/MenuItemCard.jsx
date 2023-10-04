@@ -14,9 +14,9 @@ const MenuItemCard = ({ item }) => {
         <h4 className="text-xl ">
           {name} <span className="hidden lg:inline">------------------</span>
         </h4>
-        <p className="text-[#737373]">{recipe}</p>
+        <p className="text-gray_medium">{recipe}</p>
       </div>
-      <p>${price}</p>
+      <p className="text-yellow">${price}</p>
     </div>
   );
 };

@@ -9,7 +9,7 @@ const Navbar = () => {
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="w-5 h-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -38,34 +38,59 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/">
-          <div className="normal-case text-xl">
+          <div className="text-xl normal-case">
             <p>BISTRO BOSS</p>
             <p>Restaurant</p>
           </div>
         </Link>
       </div>
-      <div className="navbar-end w-full selection:file:before: hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 font-bold">
-          <li className="hover:bg-white transition duration-300 ease-in-out rounded-lg">
-            <a>HOME</a>
+      <div className="hidden w-full text-white navbar-end selection:file:before: lg:flex">
+        <ul className="px-1 font-bold menu menu-horizontal">
+          <li className="rounded-lg ">
+            <Link
+              to="/"
+              className="transition duration-300 ease-in-out hover:bg-white "
+            >
+              HOME
+            </Link>
           </li>
-          <li className="hover:bg-white transition duration-300 ease-in-out rounded-lg">
-            <a>CONTACT US</a>
+          <li className="rounded-lg">
+            <Link
+              to="/contact"
+              className="transition duration-300 ease-in-out hover:bg-white "
+            >
+              CONTACT US
+            </Link>
           </li>
-          <li className="hover:bg-white transition duration-300 ease-in-out rounded-lg">
-            <a>DASHBOARD</a>
+          <li className="rounded-lg ">
+            <Link className="transition duration-300 ease-in-out hover:bg-white ">
+              DASHBOARD
+            </Link>
           </li>
-          <li className="hover:bg-white transition duration-300 ease-in-out rounded-lg">
-            <a>OUR MENU</a>
+          <li className="rounded-lg">
+            <Link
+              to="/menu"
+              className="transition duration-300 ease-in-out hover:bg-white "
+            >
+              OUR MENU
+            </Link>
           </li>
-          <li className="hover:bg-white transition duration-300 ease-in-out rounded-lg  ">
-            <div className="flex">
+          <li className="rounded-lg ">
+            <Link
+              to="/shop"
+              className="flex transition duration-300 ease-in-out hover:bg-white "
+            >
               <a>OUR SHOP</a>
               <img src={shopIcon} alt="shop icon" className="w-6 h-6" />
-            </div>
+            </Link>
           </li>
-          <li className="hover:bg-white transition duration-300 ease-in-out rounded-lg">
-            <a>SIGN OUT</a>
+          <li className="rounded-lg">
+            <Link
+              to="/signout"
+              className="transition duration-300 ease-in-out hover:bg-white "
+            >
+              SIGN OUT
+            </Link>
           </li>
         </ul>
       </div>
