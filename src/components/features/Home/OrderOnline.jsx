@@ -14,7 +14,7 @@ import slide5 from "../../../assets/home/slide5.jpg";
 import SectionHeading from "../../Section_heading/SectionHeading";
 const OrderOnline = () => {
   return (
-    <section className=" lg:p-20 w-full">
+    <section className="w-full p-5 lg:p-20">
       <SectionHeading
         heading="ORDER ONLINE"
         subTitle="---From 11:00am to 10:00pm---"
@@ -26,35 +26,35 @@ const OrderOnline = () => {
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper overflow-visible"
+        className="overflow-visible mySwiper"
       >
-        <SwiperSlide className=" cursor-pointer">
+        <SwiperSlide className="cursor-pointer ">
           <img src={slide1} alt="" className="w-full" />
           <h4 className="text-4xl uppercase -mt-32 mb-10 text-center text-[#FFFFFF]">
             Salads
           </h4>
         </SwiperSlide>
-        <SwiperSlide className=" cursor-pointer">
+        <SwiperSlide className="cursor-pointer ">
           <img src={slide2} alt="" className="w-full" />
-          <h4 className="text-4xl uppercase -mt-32 text-center text-white">
+          <h4 className="-mt-32 text-4xl text-center text-white uppercase">
             pizzas
           </h4>
         </SwiperSlide>
-        <SwiperSlide className=" cursor-pointer">
+        <SwiperSlide className="cursor-pointer ">
           <img src={slide3} alt="" className="w-full" />
-          <h4 className="text-4xl uppercase -mt-32 text-center text-white">
+          <h4 className="-mt-32 text-4xl text-center text-white uppercase">
             Soups
           </h4>
         </SwiperSlide>
-        <SwiperSlide className=" cursor-pointer">
+        <SwiperSlide className="cursor-pointer ">
           <img src={slide4} alt="" className="w-full" />
-          <h4 className="text-4xl uppercase -mt-32 text-center text-white">
+          <h4 className="-mt-32 text-4xl text-center text-white uppercase">
             desert
           </h4>
         </SwiperSlide>
-        <SwiperSlide className=" cursor-pointer">
+        <SwiperSlide className="cursor-pointer ">
           <img src={slide5} alt="" className="w-full" />
-          <h4 className="text-4xl uppercase -mt-32 text-white text-center">
+          <h4 className="-mt-32 text-4xl text-center text-white uppercase">
             Salads
           </h4>
         </SwiperSlide>
