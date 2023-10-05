@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import CallUs from "../components/features/Home/CallUs";
 import ChefRecommends from "../components/features/Home/ChefRecommends";
 import FromOurMenu from "../components/features/Home/FromOurMenu";
@@ -9,7 +10,11 @@ import Testimonials from "../components/features/Home/Testimonials";
 
 const Home = () => {
   return (
-    <>
+    <main>
+      <Helmet>
+        <title>Home | BISTRO BOSS </title>
+        <meta name="description" content="Nested component" />
+      </Helmet>
       <Hero />
       <OrderOnline />
       <QuoteSection />
@@ -18,7 +23,7 @@ const Home = () => {
       <ChefRecommends />
       <FromOurMenu />
       <Testimonials />
-    </>
+    </main>
   );
 };
 
