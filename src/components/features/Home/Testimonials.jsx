@@ -1,4 +1,5 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import ReactStarsRating from "react-awesome-stars-rating";
 import { Carousel } from "react-responsive-carousel";
 import quote from "../../../assets/icon/quote.png";
 import SectionHeading from "../../Section_heading/SectionHeading";
@@ -21,11 +22,15 @@ const Testimonials = () => {
         className="flex flex-col items-center mb-10 lg:px-20"
         key={testimonial._id}
       >
-        <div>star</div>
+        <ReactStarsRating
+          isEdit={false}
+          value={testimonial.rating}
+          className="flex gap-1"
+        />
         <div className="w-10 h-10 my-10">
           <img src={quote} alt="" className="w-10 h-10" />
         </div>
-        <p>{testimonial.testimonial}</p>
+        <p>{testimonial.details}</p>
         <p className="text-3xl font-semibold text-yellow">{testimonial.name}</p>
       </div>
     ));

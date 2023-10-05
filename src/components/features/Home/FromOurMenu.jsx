@@ -12,7 +12,7 @@ const FromOurMenu = () => {
   return (
     <section
       style={sectionStyle}
-      className="relative w-full h-[900px] md:h-[1000px] my-20 lg:h-screen"
+      className="relative w-full h-[900px] md:h-[1000px] my-20 lg:h-screen bg-fixed"
     >
       <div className="w-full h-full opacity-40 bg-dark" />
       <div className="absolute w-10/12 transform -translate-x-1/2 top-20 left-1/2">

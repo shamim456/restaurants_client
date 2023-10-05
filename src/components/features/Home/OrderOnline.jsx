@@ -13,52 +13,58 @@ import slide4 from "../../../assets/home/slide4.jpg";
 import slide5 from "../../../assets/home/slide5.jpg";
 import SectionHeading from "../../Section_heading/SectionHeading";
 const OrderOnline = () => {
+  const menuItems = [
+    { id: 1, name: "Salads", image: slide1 },
+    { id: 2, name: "pizzas", image: slide2 },
+    { id: 3, name: "Soups", image: slide3 },
+    { id: 4, name: "desert", image: slide4 },
+    { id: 5, name: "Salads", image: slide5 },
+  ];
+
+  let content;
+
+  if (menuItems.length > 0) {
+    content = menuItems.map((item) => (
+      <SwiperSlide key={item.id} className="cursor-pointer ">
+        <img src={item.image} alt="" className="w-full" />
+        <h4 className="text-4xl uppercase -mt-32 mb-10 text-center text-[#FFFFFF]">
+          {item.name}
+        </h4>
+      </SwiperSlide>
+    ));
+  }
   return (
     <section className="w-full p-5 lg:p-20">
       <SectionHeading
         heading="ORDER ONLINE"
         subTitle="---From 11:00am to 10:00pm---"
       />
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="overflow-visible mySwiper"
-      >
-        <SwiperSlide className="cursor-pointer ">
-          <img src={slide1} alt="" className="w-full" />
-          <h4 className="text-4xl uppercase -mt-32 mb-10 text-center text-[#FFFFFF]">
-            Salads
-          </h4>
-        </SwiperSlide>
-        <SwiperSlide className="cursor-pointer ">
-          <img src={slide2} alt="" className="w-full" />
-          <h4 className="-mt-32 text-4xl text-center text-white uppercase">
-            pizzas
-          </h4>
-        </SwiperSlide>
-        <SwiperSlide className="cursor-pointer ">
-          <img src={slide3} alt="" className="w-full" />
-          <h4 className="-mt-32 text-4xl text-center text-white uppercase">
-            Soups
-          </h4>
-        </SwiperSlide>
-        <SwiperSlide className="cursor-pointer ">
-          <img src={slide4} alt="" className="w-full" />
-          <h4 className="-mt-32 text-4xl text-center text-white uppercase">
-            desert
-          </h4>
-        </SwiperSlide>
-        <SwiperSlide className="cursor-pointer ">
-          <img src={slide5} alt="" className="w-full" />
-          <h4 className="-mt-32 text-4xl text-center text-white uppercase">
-            Salads
-          </h4>
-        </SwiperSlide>
-      </Swiper>
+      <div className="md:hidden">
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="overflow-visible mySwiper"
+        >
+          {content}
+        </Swiper>
+      </div>
+      <div className="hidden md:inline">
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="overflow-visible mySwiper"
+        >
+          {content}
+        </Swiper>
+      </div>
     </section>
   );
 };

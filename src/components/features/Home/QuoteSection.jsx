@@ -1,10 +1,18 @@
 import bannerImage from "../../../assets/home/chef-service.jpg";
 const QuoteSection = () => {
+  const backgroundImageUrl = `url(${bannerImage})`;
+  const backgroundImageStyle = {
+    backgroundImage: backgroundImageUrl,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+  };
   return (
-    <section className="py-10 relative">
-      <img src={bannerImage} alt="chef service" />
-      <div className="bg-white hidden lg:inline p-16 text-center w-1/2 mx-auto absolute top-1/2 left-1/2 transform translate-x-[-50%] translate-y-[-50%]">
-        <h4 className="text-5xl mb-4">Bistro Boss</h4>
+    <section
+      className="md:px-10 lg:px-20 lg:py-10 h-[70vh] bg-fixed flex justify-center items-center "
+      style={backgroundImageStyle}
+    >
+      <div className="px-5 py-5 mx-auto text-center bg-white lg:px-20 lg:py-20 ">
+        <h4 className="mb-4 text-5xl">Bistro Boss</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Necessitatibus, libero accusamus laborum deserunt ratione dolor
