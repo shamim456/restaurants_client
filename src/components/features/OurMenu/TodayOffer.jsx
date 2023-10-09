@@ -7,6 +7,7 @@ const TodayOffer = () => {
 
   return (
     <MenuItemCard
+      link="/order/tody's offer"
       menuItems={todayOffer}
       loading={loading}
       subTitle="---Don't miss---"

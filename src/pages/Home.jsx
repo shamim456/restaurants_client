@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <main>
       <Helmet>
-        <title>Home | BISTRO BOSS </title>
+        <title>BISTRO BOSS | Home </title>
         <meta name="description" content="Nested component" />
       </Helmet>
       <Hero />

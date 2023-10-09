@@ -11,7 +11,6 @@ const useMenuItems = () => {
         setLoading(false);
       });
   }, []);
-  console.log(menuItems);
   return [menuItems, loading];
 };
 

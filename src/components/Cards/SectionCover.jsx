@@ -15,11 +15,11 @@ const SectionCover = ({ image, className, isWhite, title, description }) => {
     >
       <div
         className={`w-full px-5 py-5 mx-auto text-center ${
-          isWhite ? "bg-white text-dark" : "bg-dark opacity-60 text-white"
+          isWhite ? "bg-white text-dark" : "bg-dark opacity-90 text-white"
         }  lg:px-20 lg:py-20`}
       >
         <h4 className="mb-4 text-5xl">{title}</h4>
-        <p>{description}</p>
+        <p className="uppercase ">{description}</p>
       </div>
     </section>
   );

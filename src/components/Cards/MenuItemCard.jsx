@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import SectionHeading from "../Section_heading/SectionHeading";
 import SectionFooterButton from "../Button/SectionFooterButton";
 import Loading from "../shared/Loading";
+import { Link } from "react-router-dom";
 
 const MenuItemCard = ({
   menuItems,
@@ -9,6 +10,7 @@ const MenuItemCard = ({
   loading,
   subTitle,
   buttonText,
+  link,
 }) => {
   let content;
 
@@ -42,7 +44,9 @@ const MenuItemCard = ({
         <SectionHeading subTitle={subTitle} heading={sectionHeading} />
       ) : null}
       <div className="grid gap-10 md:grid-cols-2">{content}</div>
-      <SectionFooterButton>{buttonText}</SectionFooterButton>
+      <Link to={link}>
+        <SectionFooterButton>{buttonText}</SectionFooterButton>
+      </Link>
     </section>
   );
 };
@@ -59,5 +63,6 @@ MenuItemCard.propTypes = {
   buttonText: PropTypes.string,
   menuItems: Array,
   loading: PropTypes.node,
+  link: PropTypes.string.isRequired,
 };
 export default MenuItemCard;

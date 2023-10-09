@@ -77,10 +77,10 @@ const Navbar = () => {
           </li>
           <li className="rounded-lg ">
             <Link
-              to="/shop"
+              to="/order/salad"
               className="flex transition duration-300 ease-in-out hover:bg-white "
             >
-              <a>OUR SHOP</a>
+              <a>ORDER NOW</a>
               <img src={shopIcon} alt="shop icon" className="w-6 h-6" />
             </Link>
           </li>
