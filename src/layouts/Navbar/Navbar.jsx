@@ -86,6 +86,14 @@ const Navbar = () => {
           </li>
           <li className="rounded-lg">
             <Link
+              to="/login"
+              className="transition duration-300 ease-in-out hover:bg-white "
+            >
+              LOGIN
+            </Link>
+          </li>
+          <li className="rounded-lg">
+            <Link
               to="/signout"
               className="transition duration-300 ease-in-out hover:bg-white "
             >

@@ -8,6 +8,10 @@ const menuItems = [
   "desserts",
   "drinks",
   "tody's offer",
+  "soups",
+  "desserts",
+  "drinks",
+  "tody's offer",
 ];
 const Menu = () => {
   const [menuItem] = useMenuItems();
@@ -21,7 +25,7 @@ const Menu = () => {
   console.log(newMenu);
 
   return (
-    <section className="lg:px-20 lg:py-10">
+    <section className="py-10  lg:px-20">
       <Tab tabItems={menuItems} tabPanel={newMenu} />
     </section>
   );
