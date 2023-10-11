@@ -1,5 +1,7 @@
 import SectionCover from "../components/Cards/SectionCover";
 import banner from "../assets/contact/banner.jpg";
+import OurLocation from "../components/features/Contact/OurLocation";
+import ContactForm from "../components/features/Contact/ContactForm";
 
 const ContactUs = () => {
   return (
@@ -9,6 +11,8 @@ const ContactUs = () => {
         title="CONTACT US"
         description="Would you like to try a dish?"
       />
+      <OurLocation />
+      <ContactForm />
     </main>
   );
 };
